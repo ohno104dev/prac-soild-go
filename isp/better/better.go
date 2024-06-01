@@ -1,6 +1,7 @@
 package better
 
 // Interface Segregation Principle (ISP)
+// 不應該去依賴你根本不會用到的東西
 // 應該使用多個小的, 集中的interface, 而不是一個涵蓋所有可能的大型單體interface
 
 // Advantages

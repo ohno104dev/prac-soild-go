@@ -13,6 +13,7 @@ func (p *Pigeon) Fly() string {
 type Penguin struct{}
 
 // contradicts the expected behavior of a bird
+// NOT a subType of Bird
 func (p *Penguin) Fly() string {
 	return "I can't fly"
 }

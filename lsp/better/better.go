@@ -1,7 +1,9 @@
 package better
 
 // Liskov Substitution Principle (LSP)
-// 子類型的object應該能夠替換基類的object, 而不影響程序的正確性
+// 只要不是subType關係(滿足LSP 7 rule), 就不該使用繼承
+// subType: 如果S是T的subType 那在所有T出現過的地方都可以用S取代, 架構更有彈性
+// subClass: A extend B (不符合7項條件) 目的是code reuse
 
 // Advantages
 // 可維護性, 確保實現interface的所有類型都符合預期行為
@@ -11,6 +13,8 @@ package better
 // Disadvantages
 // 複雜性增加, 可能需要創建其他interface或重構現有組件以確保他們遵循原則
 // 過早抽象, 存在創建不必要的interface或抽象的風險, 而這些interface不會提供任何實際價值
+
+// https://www.jyt0532.com/2020/03/22/lsp/
 
 import "fmt"
 
